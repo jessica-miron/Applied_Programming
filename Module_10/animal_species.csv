@@ -1,0 +1,256 @@
+Higher_Clade,Family,Species,Common_Name,Body_Mass_grams,Humerus_Length,Humerus_Circumference,Femur_Length,Femur_Circumference
+Afrotheria,Elephantidae,Elephas maximus,Indian elephant,3534000,830,310,980,315
+Afrotheria,Elephantidae,Loxodonta africana,African elephant,6435000,1035,416.3,1147.5,399
+Afrotheria,Macroscelididae,Petrodromus tetradactylus,Four-toed Elephant Shrew,275,33.7,9.5,47.3,12.5
+Afrotheria,Macroscelididae,Rhynchocyon cirnei,Checkered Elephant Shrew,445,,9.5,55.45,13.75
+Afrotheria,Procaviidae,Heterohyrax brucei,Yellow-spotted Rock Hyrax,3650,78.2,21.75,79.5,24.25
+Carnivora,Canidae,Alopex lagopus,Arctic Fox,3710,112.15,23,114.68,24.85
+Carnivora,Canidae,Canis latrans,Coyote,13608,166.2,41,178.35,40.6
+Carnivora,Canidae,Canis lupus,Wolf,32000,211,53.25,226.5,51.75
+Carnivora,Canidae,Cuon alpinus,Dhole,15400,158.3,42.35,173.75,44.15
+Carnivora,Canidae,Nyctereutes procyonoides,Racoon Dog,3500,84.3,25.25,89.74,25.75
+Carnivora,Canidae,Urocyon cinereoargentus,Gray fox,4800,102.74,24.1,115,27.15
+Carnivora,Canidae,Vulpes velox,Swift Fox,2300,99.88,21.55,99.17,23.3
+Carnivora,Canidae,Vulpes vulpes,Red Fox,6000,125.1,26.25,127.62,26.95
+Carnivora,Canidae,Vulpes zerda,Fennec Fox,1000,68.2,16.25,70.4,16.25
+Carnivora,Felidae,Acinonyx jubatus,Cheetah,60400,243.5,62.5,268.5,67.5
+Carnivora,Felidae,Felis catus,Domestic cat,8400,104,28.5,119.5,30
+Carnivora,Felidae,Leopardus pardalis,Ocelot,13900,144.5,40.5,165,42
+Carnivora,Felidae,Lynx canadensis,Canadian Lynx,17710,178.75,38.75,215.55,40.85
+Carnivora,Felidae,Lynx lynx,Eurasian lynx,9700,170.5,38,202.5,39
+Carnivora,Felidae,Lynx rufus,Bobcat,8800,151.25,36.5,175.95,38.25
+Carnivora,Felidae,Neofelis nebulosa,Cloud lepard,13478,,44.7,,41.4
+Carnivora,Felidae,Panthera leo,Lion,203000,366,116,401,109
+Carnivora,Felidae,Panthera onca,Jaguar,71000,239,76,265.5,72.5
+Carnivora,Felidae,Panthera pardus,Leopard,61000,200,62,231,61
+Carnivora,Felidae,Panthera tigris_altaica,Siberian tiger,230000,350,113,411,102.5
+Carnivora,Felidae,Panthera tigris_tigris,Bengal tiger,145000,310,94,360.5,90.5
+Carnivora,Felidae,Panthera unica,Snow Leopard,43100,208.5,63.5,234.5,63
+Carnivora,Felidae,Puma concolor,Cougar,47000,231.5,65.5,276.5,62.5
+Carnivora,Herpestidae,Crossarchus obscurus,Common Kusimanse,1190,48.86,14.9,54.76,15.5
+Carnivora,Herpestidae,Galerella sanguinea,Slender Mongoose,1100,45.5,14,51.25,14.5
+Carnivora,Herpestidae,Helogale parvula,Common Dwarf Mongoose,450,34.6,11,36,12
+Carnivora,Herpestidae,Herpestes javanicus,Small Asian Mongoose,384,42.2,11.6,46.84,12.5
+Carnivora,Herpestidae,Ichneumia albicauda,White-tailed Mongoose,4760,93.3,23.1,108.72,27.05
+Carnivora,Herpestidae,Liberiictis kuhni,Liberian Mongoose,2430,68,20.5,76.1,22.25
+Carnivora,Herpestidae,Suricata suricata,Meerkat,717,50.74,13.2,55.83,13.65
+Carnivora,Mustelidae,Arctonyx collaris,Hog Badger,5900,96.56,32.1,109.04,29.3
+Carnivora,Mustelidae,Gulo gulo,Wolverine,16556,136.25,39.75,141.5,35
+Carnivora,Mustelidae,Lutra canadensis,Otter,6400,74.66,26.1,73.69,24.4
+Carnivora,Mustelidae,Martes pennanti,Fisher,6160,96.4,22.25,102.45,24.5
+Carnivora,Mustelidae,Mephitis mephitis,Striped Skunk,6500,62.15,24.05,71.25,22.05
+Carnivora,Mustelidae,Mustela erminae,Stoat,145,29.2,7,30.6,7.7
+Carnivora,Mustelidae,Mustela frenata,Long-tailed weasel,260,34.98,9.55,38.48,10.2
+Carnivora,Mustelidae,Mustela nigripes,Black-footed ferret,694,48.8,12.15,49.9,13.05
+Carnivora,Mustelidae,Mustela putorius,European Polecat,1100,47.3,12.95,51.97,12.5
+Carnivora,Mustelidae,Mustela vison,American Mink,1135,47.76,14.65,50.87,14.7
+Carnivora,Mustelidae,Taxidae taxus,American Badger,9900,103.1,33,100.8,27.75
+Carnivora,Otariidae,Arctocephalus pusillus,Brown fur seal,43000,141.35,83.95,81.75,48.75
+Carnivora,Phocidae,Phoca groenlandica,Harp seal,42000,128.5,68.85,90.55,70
+Carnivora,Procyonidae,Procyon lotor,Racoon,7000,114.7,31.05,132.75,33.25
+Carnivora,Ursidae,Ursus americanus,Black bear,204000,296,101.5,302,96.5
+Carnivora,Ursidae,Ursus arctos,Grizzly bear,435500,400.5,146.25,445.5,126.25
+Carnivora,Ursidae,Ursus maritimus,Polar bear,447695,,158,,135
+Carnivora,Viverridae,Viverricula indica,Lesser oriental civet,2600,78.3,21.2,92.95,24.1
+Euarchonta,Aotidae,Aotus trivirgatus,Three-striped Night Monkey,1050,68.465,15,91.14,16.85
+Euarchonta,Callitrichidae,Callithrix jacchus,Common Marmoset,270,45.04,11.05,56.175,11.85
+Euarchonta,Callitrichidae,Cebuella pygmaea,Pygmy Marmoset,178,35.77,8.75,40.615,8.85
+Euarchonta,Callitrichidae,Saguinus sp.,Tamarin,422,52.625,12.2,66.32,13.35
+Euarchonta,Cercopithecidae,Cercopithecus neglectus,De Brazza's Monkey,11450,149.43,36.95,184.4,39.05
+Euarchonta,Cercopithecidae,Macaca fuscata,Japanese Macaque,3500,135.9,30,152.5,31.5
+Euarchonta,Cercopithecidae,Papio cynocephalus,Yellow baboon,28576,,55,,57
+Euarchonta,Cercopithecidae,Papio hamadryas,Hamadryas Baboon,14700,190.85,42.25,224.4,44.5
+Euarchonta,Galagidae,Euoticus elegantulus,Southern Needle-clawed Bushbaby,260,38.26,11.2,65.34,12
+Euarchonta,Galagidae,Otolemur crassicaudatus,Brown Greater Galago,950,59.915,16,90.14,19
+Euarchonta,Hominidae,Pongo Pygmaeus,Orangutan,155000,368.5,98.5,273,88
+Euarchonta,Hylobatidae,Hylobates lar,Lar Gibbon,6400,238.05,28.5,203.6,31.45
+Euarchonta,Lemuridae,Eulemur fulvus,Common Brown Lemur,1192,74.095,16.05,116.44,19.8
+Euarchonta,Lemuridae,Lemur catta,Ring-tailed Lemur,2300,89.39,21,143.39,26.8
+Euarchonta,Tuapiidae,Tupaia glis,Common Treeshrew,176,27.3,7,35.85,9.35
+Eulipotyphla,Erinaceidae,Atelerix albiventris,African pygmy hedgehog,360,33.45,10.95,34.3,15.15
+Eulipotyphla,Erinaceidae,Atelerix algirus,North African Hedgehog,415,33.8,10.2,34.25,11.7
+Eulipotyphla,Erinaceidae,Echinosorex gymnura,Moonrat,610,45,11,49.45,13.05
+Eulipotyphla,Erinaceidae,Erinaceus europaeus,European Hedgehog,717,44.65,15.5,41.35,16.75
+Eulipotyphla,Talpidae,Condylura cristata,Star-nosed mole,59,13.9,10.05,15.9,6.3
+Eulipotyphla,Talpidae,Parascalops breweri,Hairy-tailed Mole,56,14.1,12.3,14.35,5.9
+Glires,Aplodontidae,Aplodontia rufa,Mountain Beaver,953,45.55,15,52.75,15.75
+Glires,Castoridae,Castor canadensis,Canadian Beaver,12500,78.8,34.5,104.2,49.75
+Glires,Caviidae,Cavia porcellus,Guinea pig,1200,40.45,12.6,48.5,16
+Glires,Caviidae,Dolichotis patagonum,Patagonian Mara,8950,113.6,28.6,129.35,35.35
+Glires,Chinchillidae,Chinchilla lanigera,Long-tailed chinchilla,462,33.3,8.85,54.7,14.8
+Glires,Cricetidae,Dicrostonyx groenlandicus,Northern collared lemming,103,19.85,6.9,23,7.15
+Glires,Cricetidae,Dicrostonyx hudsonius,Ungava Collared Lemming,108.8,20,7.1,24.15,8
+Glires,Cricetidae,Dicrostonyx richardsoni,Richardson's Collared Lemming,95,19.5,5.8,23.35,5.6
+Glires,Cricetidae,Melanomys caliginosus,Dusky Rice Rat,64,16.95,6,23.35,8.2
+Glires,Cricetidae,Mesocricetus auratus,Hamster,198,24.3,8.85,29,11
+Glires,Cricetidae,Microtus chrotorrhinus,Rock Vole,67,15.05,4.85,18.35,5.6
+Glires,Cricetidae,Microtus pennsylvanicus,Meadow Vole,70,14.6,4.5,18.1,5.7
+Glires,Cricetidae,Microtus richardsoni,Water Vole,61,16.2,5.2,18.95,6.75
+Glires,Cricetidae,Nectomys squamipes,South American Water Rat,235,24.45,7.6,37.5,11.8
+Glires,Cricetidae,Neotoma albigula,White-Throated Woodrat,188.1,27.5,8.45,35.4,11.05
+Glires,Cricetidae,Oryzomys albigularis,Tomes's rice rat,106,22.5,6,30.35,8
+Glires,Cricetidae,Oryzomys couesi,Coues' Rice Rat,102,19.4,7.05,28.7,9.85
+Glires,Cricetidae,Oryzomys megacephalus,Large-headed Rice Rat,86,19.65,5.75,29.15,7.5
+Glires,Cricetidae,Peromyscus zarhynchus,Chiapan Deer Mouse,78,19.95,5.55,27.5,7
+Glires,Cricetidae,Rhipidomys leucodactylus,White-footed Climbing Mouse,110,22.85,7.9,32,10
+Glires,Cricetidae,Sigmodon hispidus,Hispid cotton rat,163,22.95,6.75,33.6,10
+Glires,Dasyproctidae,Dasyprocta aguti,Agouti,2230,74.5,20.5,93.95,28
+Glires,Echimyidae,Echimys didelphoides,Brazilian Spiny Tree Rat,375,30.4,10.1,39.3,13.5
+Glires,Echimyidae,Echimys semivillosus,Speckled Spiny Tree-rat,350,31.85,10.5,40.75,14.25
+Glires,Echimyidae,Proechimys cuvieri,Cuvier's Spiny-rat,400,33.35,9.05,45,13.5
+Glires,Erethizontidae,Erethizon dorsatum,Porcupine,9051,105.1,29.65,121.3,37.4
+Glires,Geomyidae,Geomys bursarius,Plains Pocket Gopher,167.6,23.25,10.25,26.45,9.15
+Glires,Geomyidae,Orthogeomys hispidus,Hispid Pocket Gopher,490,34.45,13.95,42.05,14.05
+Glires,Geomyidae,Thomomys Talpoides,Northern Pocket Gopher,210,25.65,10.7,28.9,10.3
+Glires,Heteromyidae,Dipodomys ordii,Ord's Kangaroo Rat,67,15.8,5.1,29.18,7.35
+Glires,Heteromyidae,Heteromys desmarestianus,Desmarest's Spiny Pocket Mouse,94,19.3,6.15,28.8,8.9
+Glires,Heteromyidae,Heteromys gaumeri,Gaumer's Spiny Pocket Mouse,81,19.6,6,28.1,8.2
+Glires,Heteromyidae,Heteromys goldmani,Goldman's Spiny Pocket Mouse,82,20.65,6.1,29.1,8.7
+Glires,Hydrochaeridae,Hydrochaeris hydrochaeris,Capybara,56500,191.5,60.5,223.5,70.5
+Glires,Leporidae,Lepus americanus,Snowshoe Hare,1294,75.7,14.5,98.25,19.65
+Glires,Leporidae,Lepus arcticus,Arctic Hare,4500,109.15,22,129.2,30
+Glires,Leporidae,Lepus californicus,Blacktail jackrabbit,1535,83.6,17.8,107.55,12.3
+Glires,Leporidae,Lepus europaeus,European Hare,3402,108.1,24.75,137.9,33.75
+Glires,Leporidae,Lepus townsendii,White-tailed Jackrabbit,4300,102.6,20.75,125.85,28.25
+Glires,Leporidae,Oryctolagus cuniculus,European Rabbit,1900,68.55,15.5,88.8,20
+Glires,Leporidae,Sylvilagus floridanus,Eastern cottontail,1057,61.9,14.85,82.4,18.35
+Glires,Muridae,Acomys cahirinus,Cairo Spiny Mouse,56,16.7,4.36,21.65,6.225
+Glires,Muridae,Arvicanthis niloticus,African Grass Rat,120,21,6.5,28.65,9.05
+Glires,Muridae,Gerbillus gerbillus,Lesser Gerbil,79,16.3,5.1,25.45,8
+Glires,Muridae,Gerbillus pyramidum,Greater Egyptian Gerbil,62,16.5,5.2,25.1,7.3
+Glires,Muridae,Malacomys cansdalei,Cansdale's Swamp Rat,70,21.05,5.25,30.1,7.1
+Glires,Muridae,Meriones unguiculatus,Mongolian Jird,61,16,5.1,22.95,7
+Glires,Muridae,Ondatra zibethicus,Muskrat,1200,41.25,14,50.45,16.65
+Glires,Muridae,Rattus norvegicus,Brown rat,464,31.5,10.9,41.65,14.25
+Glires,Myocastoridae,Myocastor coypus,Coypu,8130,77.55,25.5,100.95,32.7
+Glires,Nesomyidae,Cricetomys emini,Emin's Pouched Rat,550,46,12.65,61.15,16
+Glires,Octodontidae,Octodon degus,Degu,238,25.25,7.05,34.8,9.45
+Glires,Sciuridae,Cynomys leucurus?,White-tailed prairie dog,1130,40,13.5,48.25,13.5
+Glires,Sciuridae,Funisciurus pyrrhopus,Fire-footed Rope Squirrel,190,31.8,9.1,41.55,10.25
+Glires,Sciuridae,Marmota caligata,Hoary marmot,6250,90.05,28.4,99.2,25.1
+Glires,Sciuridae,Marmota monax,Groundhog,3012,68.95,24.15,80.85,22
+Glires,Sciuridae,Sciurus carolinensis,Eastern gray squirrel,765,44.7,13.1,57.4,14.6
+Glires,Sciuridae,Sciurus niger,Fox squirrel,1109,57.8,16.85,72.75,18.25
+Glires,Sciuridae,Spermophilus adocetus,Lesser tropical ground squirrel,345,30.3,8.9,37.1,10.05
+Glires,Sciuridae,Spermophilus franklinii,Franklin's ground squirrel,475,34,11.9,43.9,12
+Glires,Sciuridae,Spermophilus lateralis,Golden-mantel squirrel,159,26,7.3,35.2,8.7
+Glires,Sciuridae,Spermophilus richardsonii,Richardson's ground squirrel,345,31.95,10.1,38.75,10.9
+Glires,Sciuridae,Spermophilus tridecemlineatus,Thirteen-lined ground squirrel,195,26.65,9.7,34.1,8.8
+Glires,Sciuridae,Tamias amoenus,Yellow-pine chipmunk,52.9,18.25,5.25,24.7,6
+Glires,Sciuridae,Tamias minimus,Least chipmunk,60.5,18.1,5.6,24.05,5.95
+Glires,Sciuridae,Tamiasciurus hudsonicus,American Red Squirrel,260,31.4,10,40.2,9.95
+Marsupialia,Dasyuridae,Dasyuroides byrnei,Kowari,133,27.35,7.15,34.6,8.7
+Marsupialia,Dasyuridae,Sarcophilus harrisii,Tasmanian Devil,8490,99.95,27.25,103.75,27.45
+Marsupialia,Didelphidae,Chironectes minimus,Water Opossum,700,45.065,12.25,57.715,14.95
+Marsupialia,Didelphidae,Didelphis marsupialis,Oppossum,1500,63.05,17,80.855,18.8
+Marsupialia,Didelphidae,Didelphis virginiana,Virginia Opossum,7500,75.7,26.5,90.85,26.25
+Marsupialia,Didelphidae,Marmosa murina,Linnaeus's Mouse Opossum,59,21.45,6.2,25.75,6.1
+Marsupialia,Didelphidae,Metachirus nudicaudatus,Brown Four-eyed Opossum,235,35.35,9.25,51.15,11.45
+Marsupialia,Didelphidae,Monodelphis brevicaudata,Northern Red-sided Opossum,77,20.75,6.9,24.55,6.8
+Marsupialia,Didelphidae,Philander opossum,Gray Four-eyed Opossum,600,45.6,10.95,55.95,12.85
+Marsupialia,Macropodidae,Bettongia penicillata,Woylie,1120,33.67,12.95,80.32,21.45
+Marsupialia,Macropodidae,Dendrolagus inustus,Grizzled Tree-kangaroo,18200,140.7,48.25,183.5,56.25
+Marsupialia,Macropodidae,Macropus fuliginosus,Western Grey Kangaroo,22730,117.4,31,214.35,57.5
+Marsupialia,Macropodidae,Macropus rufus,Red Kangaroo,38000,154.7,55.75,251.1,71.5
+Marsupialia,Petauridae,Gymnobelideus leadbeateri,Leadbeater's possum,106.7,24.2,7.75,34.9,8.2
+Ungulata,Bovidae,Aepyceros malampus,Impala,60500,,65,,69
+Ungulata,Bovidae,Ammotragus lervia,Barbary sheep,49200,181,65.75,212.5,67.25
+Ungulata,Bovidae,Antilope cervicapra,Blackbuck,22000,137.85,47.4,176.5,47.55
+Ungulata,Bovidae,Bison bison,Bison,1179000,,191.5,,167.5
+Ungulata,Bovidae,Bison bonasus,European bison,310000,350,130,418,122
+Ungulata,Bovidae,Bos gaurus,Bos gaurus,545000,343.5,154.5,429,156.5
+Ungulata,Bovidae,Capra aegagrus,Wild goat,29500,165.1,58,183.65,58.95
+Ungulata,Bovidae,Capra caucasica,West Caucasian Tur,116800,240,89,271.5,88
+Ungulata,Bovidae,Capra ibex,Alpine Ibex,25420,156.25,54.1,188.9,52.65
+Ungulata,Bovidae,Connochaetes gnou,Black Wildebeest,108500,209,85.5,251,87
+Ungulata,Bovidae,Connochaetes taurinus,Blue wildebeest,256500,,115,,100
+Ungulata,Bovidae,Hemitragus jemlahicus,Himalayan Tahr,31100,172.5,61.4,184.8,57.8
+Ungulata,Bovidae,Oryx dammah,Scimitar Oryx,117900,225,95,278,92.5
+Ungulata,Bovidae,Ovibos moschatus,Muskox,315000,315.5,128,350.5,111
+Ungulata,Bovidae,Ovis aries,Domestic sheep,76600,158,74.5,188,79
+Ungulata,Bovidae,Ovis dalli,Dall Sheep,76200,214.5,82.5,254,81.5
+Ungulata,Bovidae,Sylvicapra grimmia,Duiker,13860,,31,,46
+Ungulata,Bovidae,Tragelaphus angasii,Nyala,134500,,99,,97
+Ungulata,Bovidae,Tragelaphus scriptus,Bushbuck,50900,,56,,62
+Ungulata,Bovidae,Tragelaphus strepsiceros,Kudu,301000,,140,,135
+Ungulata,Camelidae,Camelus bactrianus,Bactrian Camel,680400,386,220,485,139.5
+Ungulata,Camelidae,Lama guanicoe,Guanaco,123800,253,100,315,95
+Ungulata,Cervidae,Alces alces,Moose,523000,393,145.5,440,144
+Ungulata,Cervidae,Cervus duvaucelii,Barasingha,225000,265.5,101.5,343,105
+Ungulata,Cervidae,Cervus nippon,Sika Deer,82200,215,70,263.5,73
+Ungulata,Cervidae,Elaphurus davidianus,Père David's Deer,158800,271.5,112.5,340.5,112
+Ungulata,Cervidae,Hydropotes inermis,Water deer,24290,117.95,33.95,153.7,43.65
+Ungulata,Cervidae,Odocoileus virginianus,White-tailed deer,66100,216,72,279,77
+Ungulata,Cervidae,Rangifer tarandus,Caribou,131900,261.5,90.5,304.5,85.5
+Ungulata,Equidae,Equus burchelli?,Burchell's zebra,272400,259,118,363.5,137.5
+Ungulata,Equidae,Equus caballus,Horse (pony),350000,261.5,118.25,362,139.85
+Ungulata,Equidae,Equus zebra,Cape Mountain zebra,262000,,132,,143
+Ungulata,Giraffidae,Giraffa camelopardalis,Giraffe,990000,495,218,520,188
+Ungulata,Giraffidae,Okapia johstoni,Okapi,310000,332,131,355,128
+Ungulata,Hippopotamidae,Choeropsis liberiensis,Pygmy Hippo,250000,245,101,268.7,107
+Ungulata,Hippopotamidae,Hippopotamus amphibius,Hippo,1264000,422.5,182.5,467,188.5
+Ungulata,Rhinocerotidae,Ceratotherium simum,White Rhinoceros,1900000,457,257,559,225
+Ungulata,Rhinocerotidae,Rhinoceros sondaicus,Javan Rhinoceros,1435000,425,213,515,206
+Ungulata,Suidae,Phacochoerus africanus,Warthog,90500,,83,,72
+Ungulata,Tapiridae,Tapirus indicus,Malayan Tapir,250000,257,109,330,115
+Ungulata,Tapiridae,Tapirus terrestris,South American Tapir,139300,235.5,94.5,307.5,106
+Xenarthra,Dasypodidae,Dasypus novemcinctus,Nine-banded armadillo,3077,55.16,22.25,83,29.9
+Xenarthra,Dasypodidae,Priodontes maximus,Giant Armadillo,29500,125.05,68.25,167.7,78.5
+Xenarthra,Megalonychidae,Choloepus didactylus,Linnaeus's Two-toed Sloth,6200,166.2,40.25,157.85,43.25
+Xenarthra,Megalonychidae,Choloepus hoffmanni,Hoffmann's Two-toed Sloth,4500,140.65,32.75,133.45,34.5
+Xenarthra,Myrmecophagidae,Tamandua tetradactyla,Southern Tamandua,5470,90.7,34.6,91.2,29.8
+Reptilia,Alligatoridae,Alligator mississippiensis,American Alligator,167830,201.2,88.5,,86
+Reptilia,Alligatoridae,Caiman crocodilius,Spectacled Caiman,22050,91.75,37.3,117.75,43
+Reptilia,Agamidae,Physignathus cocincinus,Chinese water dragon,259,33.15,8.05,48.7,10.1
+Reptilia,Agamidae,Physignathus leseuri,Australian water dragon,440,39.7,9.1,55.3,10.9
+Reptilia,Agamidae,Pogona vitticeps,Central Bearded Dragon,511,34.65,9.05,38.7,9.5
+Reptilia,Agamidae,Uromastyx aegyptia,Egyptian Mastigure,610,46.7,14,50.57,16.1
+Reptilia,Agamidae,Uromastyx maliensis,Mali Spiny-tailed Agama,512,30.7,9.55,33.85,10.2
+Reptilia,Chamaeleonidae,Chamaeleo calyptratus,Veiled Chameleon,199,33.75,7.05,33.65,6.5
+Reptilia,Chamaeleonidae,Chamaeleo melleri,Giant One-horned Chameleon,258,42.7,8.65,43.65,9.5
+Reptilia,Chamaeleonidae,Furcifer pardalis,Panther Chameleon,99,30.47,7.3,31.03,7.5
+Reptilia,Corytophanidae,Basiliscus plumifrons,Plumed basilisk,199,31.2,7.55,49.15,9.5
+Reptilia,Corytophanidae,Basiliscus vittatus,Brown basilisk,112,22.2,5.95,40.85,7.5
+Reptilia,Gekkonidae,Gekko gekko,Gecko,96,20.65,5.45,24.9,5.75
+Reptilia,Gerrhosauridae,Gerrhosaurus major,Sudan plated lizard,227,22.6,6.5,25.2,7.8
+Reptilia,Helodermatidae,Heloderma suspectum,Gila monster,406,35.85,10.25,37.15,10.85
+Reptilia,Iguanidae,Iguana iguana,green iguana,2700,68.8,20.25,82.7,22.75
+Reptilia,Scincidae,Corucia zebrata,Solomon Islands skink,374,36.05,10.15,36.5,10.95
+Reptilia,Scincidae,Tiliqua scincoides,Blue-tongued skink,243,27.16,7.75,25.97,8.1
+Reptilia,Teiidae,Tupinambis teguixin,Common Tegu,1207,48.52,15,57.07,17.85
+Reptilia,Varanidae,Varanus albigularis,Rock monitor,1358,52.9,16.8,60.8,18.6
+Reptilia,Varanidae,Varanus beccarii,Black tree monitor,133,34.3,7.25,36.6,8.6
+Reptilia,Varanidae,Varanus exanthematicus,Savannah monitor,5063,64.9,25,68.35,27.4
+Reptilia,Varanidae,Varanus jobiensis,Peach-throated monitor,1100,54.2,16.75,65.9,21
+Reptilia,Varanidae,Varanus komodoensis,Komodo dragon,72000,141.6,62,173.4,67
+Reptilia,Varanidae,Varanus niloticus,Nile monitor,8645,78.45,29.75,92.35,34
+Reptilia,Varanidae,Varanus salvadorii,Salvadori's monitor,4839,73.35,25.1,80.5,25.75
+Reptilia,Chelydridae,Chelydra serpentina,Snapping turtle,5372,64.595,29.5,68.2,27.25
+Reptilia,Emydidae,Chrysemys picta,Painted turtle,537,30.86,10,34.525,10
+Reptilia,Emydidae,Clemmys guttata,Spotted turtle,79,21.715,6.65,22.4,7
+Reptilia,Emydidae,Cuora galbinifrons,Indochinese box turtle,555,40.34,12.95,36.69,11.95
+Reptilia,Emydidae,Emydoidea blandingii,Blanding's turtle,1588,52.55,15,56.155,16
+Reptilia,Emydidae,Glyptemys insculpta,Wood Turtle,766,44.37,12.45,46.87,13.15
+Reptilia,Emydidae,Pseudemys texana,Texas river cooter,185,31.17,9.05,35.65,10
+Reptilia,Emydidae,Terrapene carolina,Box turtle,460,33.76,11.85,37.2,11.45
+Reptilia,Emydidae,Trachemys scripta,Red-Eared Slider,1790,43.2,13.75,46.65,14.2
+Reptilia,Kinosternidae,Kinosternon baurii,Striped mud turtle,121,17.08,7.25,17.5,6.4
+Reptilia,Kinosternidae,Kinosternon subrubrum,Common mud turtle,138,18.84,7,19.9,6.8
+Reptilia,Kinosternidae,Sternotherus minor,Loggerhead musk turtle,173,20.64,7.2,21.21,7
+Reptilia,Kinosternidae,Sternotherus odoratus,Common Musk Turtle,193,23.88,8,24.12,7
+Reptilia,Platysternidae,Platysternon megacephalum,Big-headed turtle,629,34.95,12.75,36.7,12
+Reptilia,Testudinidae,Geochelone carbonaria,Red-footed tortoise,1181,52,19,43.72,15.65
+Reptilia,Testudinidae,Gopherus polyphemus,Gopher tortoise,2825,63.6,24,48.01,19.9
+Reptilia,Testudinidae,Kinixys homeana,Home's Hingeback tortoise,1485,51.99,17.9,44.39,15.95
+Reptilia,Trionychidae,Amyda cartilaginae,Asiatic Softshell Turtle,962,39.38,16.35,39.68,14
+Reptilia,Trionychidae,Apalone ferox,Florida softshell turtle,3836,58.56,22.25,61.12,23.6
+Reptilia,Trionychidae,Apalone spiniferus,Eastern spiny softshell turtle,278,28.27,10.3,30.11,11
+Reptilia,Trionychidae,Pelodiscus sinensis,Chinese softshell turtle,1380.25,42.21,15.3,43.55,13.05
+Amphibia,Ambystomatidae,Ambystoma tigrinum,Tiger salamader,59,15.3,6,16.3,4
+Amphibia,Leptodactylidae,Ceratophrys cranwelli,Cranwell's horned frog,129,23.3,8.65,27.8,8.45
+Amphibia,Hylidae,Litoria caerulea,Australian Green Tree Frog,51,18.5,6,30,5
+Amphibia,Bufonidae,Rhinella schneideri,Rococo Toad,538,45.05,11.9,52.2,12.15
+Amphibia,Leptodactylidae,Lepidobatrachus laevis,Wide-mouth frog,166.8,32.4,8.5,35.7,8.5
+Amphibia,Hylidae,Osteopilus septentrionalis,Cuban tree frog,117,32.1,8.5,53.8,7.7
+Amphibia,Pipidae,Xenopus laevis,African clawed frog,109.5,14.8,5.4,30,7.9
+Amphibia,Microhylidae,Dyscophus guineti,Tomato frog,76,19.5,6.6,28,6.2
