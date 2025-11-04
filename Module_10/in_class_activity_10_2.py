@@ -49,7 +49,8 @@ print(results2.summary())
 # then age and the constant
 
 print("Model 3: FEV vs quadratic height")
-model3=smf.ols('FEV ~ age + smoke + ht + np.power(ht,2)',data=fev)
+#model3=smf.ols('FEV ~ age + smoke + ht + np.power(ht,2), data=fev')
+model3=smf.ols('FEV ~ age + sex + ht + np.power(ht,2) + smoke',data=fev)
 results3=model3.fit()
 print(results3.summary())
 # Best performing model so far with R2 0.790
@@ -64,7 +65,8 @@ print(results3.summary())
 # better than model with just height because AIC and BIC are lower
 
 print("Model 4: interactions")
-model4=smf.ols('FEV ~ age*smoke',data=fev)
+#model4=smf.ols('FEV ~ age*smoke',data=fev)
+model4=smf.ols('FEV ~ age + smoke + age:smoke',data=fev)
 results4 = model4.fit()
 print(results4.summary())
 # All terms significant
@@ -75,10 +77,16 @@ print(results4.summary())
 # AIC BIC have gone back up a lot but is better than just smoking and age
 
 print("Model 5: everything")
-model5 = smf.ols('FEV ~ age*smoke + ht + np.power(ht,2)',data=fev)
+#model5 = smf.ols('FEV ~ age*smoke + ht + np.power(ht,2)',data=fev)
+model5=smf.ols('FEV ~ age + sex + ht + np.power(ht,2) + smoke + age:smoke',data=fev)
 results5=model5.fit()
 print(results5.summary())
 # AIC and BIC have increased so model is less good and R2 is the same
 # Now smoke and age smoke interaction no longer significant
 # Age increases 0.07, Smoke increases 0.16, age:smoke decreases 0.02
 # height decreases 0.31, quad height increases 0.0034
+
+print("Model 6: custom")
+model6=smf.ols('FEV ~ age*ht*sex + smoke', data=fev)
+results6=model6.fit()
+print(results6.summary())
