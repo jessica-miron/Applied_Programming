@@ -50,6 +50,12 @@ print(gse.gsms["GSM285027"].columns)
 expr = gse.pivot_samples('VALUE')
 print(expr)
 
+## Print out phenotypes
+print(gse.phenotype_data)
+print(gse.phenotype_data.loc['GSM285027'])
+convert_GSMs = gse.phenotype_data['title'].to_dict()
+convert_GSMs = {i:convert_GSMs[i].split('_')[-1] for i in convert_GSMs} 
+
 ## Take out ThGARP and ThGFP samples
 expr2 = expr.drop(['GSM2850'+str(i) for i in range(45,51)],axis=1)
 
@@ -149,34 +155,29 @@ with PdfPages('km_silhouettes_GSE11292.pdf') as pdf:
     fig = plt.figure()
     plt.plot(range(2,21),sil_km)
     plt.xticks(range(2,21))
-    plt.xlabel('Number of clusters')
-    plt.ylabel('Average sihouette score')
+    plt.xlabel('Number of Clusters')
+    plt.ylabel('Average Silhouette Score')
+    plt.title('Average Silhouette Score vs Number of Clusters')
     pdf.savefig(fig)
     plt.close()
 
 
 # Chose k = 6
-km1 = KMeans(n_clusters = 6).fit(tmp)
+km1 = KMeans(n_clusters = 7).fit(tmp)
 print(km1.labels_)
 eigengenes = pd.concat([getEigengene(expr4.loc[top3000], top3000[km1.labels_==i]) for i in range(len(set(km1.labels_)))], axis = 1)
 eigengenes.columns = range(len(set(km1.labels_)))
 
-# Make column and row colors
-convert_GSMs = gse.phenotype_data['title'].to_dict()
-convert_GSMs = {i:convert_GSMs[i].split('_')[-1] for i in convert_GSMs}
-
-colors = dict(zip(['T'+str(i)+'min' for i in range(0, 380, 20)], sns.color_palette('Greys', n_colors=19)))
-col_colors = [colors[convert_GSMs[i]] for i in expr4.columns]
-
-# Plot clustermap
-sns.clustermap(eigengenes.T, cmap = sns.color_palette("vlag",n_colors=33), col_colors=col_colors, col_cluster=False)
-plt.show()
-
 # Make it into a PDF
-with PdfPages('eigengenes_GSE11292.pdf') as pdf:
+with PdfPages('eigengenes_GSE11292_7.pdf') as pdf:
     # Plot clustermap
+    colors = dict(zip(['T'+str(i)+'min' for i in range(0, 380, 20)], sns.color_palette('Greys', n_colors=19)))
+    col_colors = [colors[convert_GSMs[i]] for i in expr4.columns]
     sns.clustermap(eigengenes.T, cmap=sns.color_palette('vlag', n_colors=33), col_colors=col_colors, col_cluster=False)
+    plt.title('7 Cluster Clustermap')
+    plt.tight_layout()
     pdf.savefig()
     plt.close()
     
-    # Left two are Treg, Right two are Teff. Look at cluster 0, run clusters with 7 and 5, Cluster only there are six, shows stuff changes over time
+    # Left two are Treg, Right two are Teff. Look at cluster 0, run clusters with 7 and 5, 
+    #Cluster only there are six, shows stuff changes over time
