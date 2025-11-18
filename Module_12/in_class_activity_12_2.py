@@ -21,7 +21,6 @@
 ## 1. Load packages
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import os, random
 
 import tensorflow as tf
@@ -37,8 +36,8 @@ from sklearn.metrics import (
 import matplotlib
 matplotlib.use('Agg')
 matplotlib.rcParams['pdf.fonttype'] = 42
-from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
 
 
 # For reproducibility
