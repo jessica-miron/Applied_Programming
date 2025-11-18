@@ -20,9 +20,6 @@
 ## 1. Load up the packages you will need to run
 import numpy as np
 import pandas as pd
-import statsmodels.formula.api as smf
-from sklearn.datasets import make_classification
-import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 matplotlib.rcParams['pdf.fonttype'] = 42
@@ -95,10 +92,10 @@ knn.fit(X_train, y_train)
 y_pred_knn = knn.predict(X_test)
 
 ## 5. Evaluate the model's performance
-accuracy = accuracy_score(y_test, y_pred)
+accuracy = accuracy_score(y_test, y_pred_knn)
 
 print(f"KNN Accuracy: {accuracy:.4f}")
-print(classification_report(y_test, y_pred))
+print(classification_report(y_test, y_pred_knn))
 
 
 ## Random Forest ##
@@ -113,18 +110,18 @@ rf_classifier.fit(X_train, y_train)
 y_pred_rf = rf_classifier.predict(X_test)
 
 ## 5. Evaluate the model's performance
-accuracy = accuracy_score(y_test, y_pred)
+accuracy = accuracy_score(y_test, y_pred_rf)
 
 print(f"Random Forest Classifier Accuracy: {accuracy:.4f}")
-print(classification_report(y_test, y_pred))
+print(classification_report(y_test, y_pred_rf))
 
 
 ## Cross-validation ##
 
 # CV KNN
-cv_knn = cross_val_score(knn, X_train, y_train, cv=100)
+cv_knn = cross_val_score(knn, X, y, cv=100)
 print(f"KNN Classifier mean +/- sd: {np.mean(cv_knn):.4f} +\- {np.std(cv_knn):.4f}")
 
 # CV RF
-cv_rf = cross_val_score(rf_classifier, X_train, y_train, cv=100)
+cv_rf = cross_val_score(rf_classifier, X, y, cv=100)
 print(f"Random Forest Classifier mean +/- sd: {np.mean(cv_rf):.4f} +\- {np.std(cv_rf):.4f}")
