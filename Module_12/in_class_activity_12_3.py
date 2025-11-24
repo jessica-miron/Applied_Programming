@@ -27,7 +27,7 @@
 import GEOparse as gp
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, QuantileTransformer
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 import matplotlib
@@ -119,9 +119,17 @@ gexpTrain = gseTrain.pivot_samples('VALUE').loc[:,subset_train]
 gexpTest = gseTest.pivot_samples('VALUE').loc[:,subset_test]
 gexpValidation = gseValidation.pivot_samples('VALUE').loc[:,subset_validation]
 
+qt = QuantileTransformer()
+gexpTrainBuffer = qt.fit_transform(gexpTrain.T)
+gexpTestBuffer = qt.transform(gexpTest.T)
+gexpValidationBuffer = qt.transform(gexpValidation.T)
+gexpTrain = pd.DataFrame(gexpTrainBuffer.T, columns=gexpTrain.columns, index=gexpTrain.index)
+gexpTest = pd.DataFrame(gexpTestBuffer.T, columns=gexpTest.columns, index=gexpTest.index)
+gexpValidation = pd.DataFrame(gexpValidationBuffer.T, columns=gexpValidation.columns, index=gexpValidation.index)
+
 #5 Feature Selection
 
-topFeatures = gexpTrain.var(axis=1).sort_values(ascending=False).index[range(1500)]
+topFeatures = gexpTrain.var(axis=1).sort_values(ascending=False).index[range(1000)]
 
 #6 Scaling
 scaler = StandardScaler()
@@ -142,8 +150,8 @@ y_full = np.concatenate((y_train,y_validation),axis=0)
 model = models.Sequential([layers.Input(shape=(gexpFull_scaled.shape[1],)),
                            layers.Dense(600, activation='relu'),
                            layers.Dropout(0.2),
-                           layers.Dense(250, activation='relu'),
-                           layers.Dropout(0.2),
+                           layers.Dense(200, activation='relu'),
+                           layers.Dropout(0.4),
                            # Binary classification = sigmoid, multiple class classification = softmax
                            layers.Dense(1, activation='sigmoid')
                            ])
@@ -257,7 +265,7 @@ Two Layers (neurons, dropout, neurons, dropout):
     600,0.2,250,0.4, min val loss = 0.1651
     600,0.2,250,0.2, min val loss = 0.1251
     
-    
+Best Model with Quantile Transformer: min val loss = 0.3663
 """
 
 ## 8 Evaluation metrics tbd
