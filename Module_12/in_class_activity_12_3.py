@@ -38,11 +38,13 @@ import seaborn as sns
 
 import tensorflow as tf
 from tensorflow.keras.utils import to_categorical
-from tensorflow.keras import layers, models, optimizers, regularizers
+from tensorflow.keras import layers, models, optimizers, regularizers, callbacks
 from sklearn.metrics import (
     roc_auc_score, roc_curve, confusion_matrix,
     accuracy_score, precision_score, recall_score
 )
+
+
 import random
 random.seed(42)
 
@@ -127,6 +129,8 @@ gexpTrain = pd.DataFrame(gexpTrainBuffer.T, columns=gexpTrain.columns, index=gex
 gexpTest = pd.DataFrame(gexpTestBuffer.T, columns=gexpTest.columns, index=gexpTest.index)
 gexpValidation = pd.DataFrame(gexpValidationBuffer.T, columns=gexpValidation.columns, index=gexpValidation.index)
 """
+
+
 #5 Feature Selection
 
 topFeatures = gexpTrain.var(axis=1).sort_values(ascending=False).index[range(1000)]
@@ -134,32 +138,40 @@ topFeatures = gexpTrain.var(axis=1).sort_values(ascending=False).index[range(100
 #6 Scaling
 scaler = StandardScaler()
 gexpTrain_scaled = scaler.fit_transform(gexpTrain.loc[topFeatures].T)
+gexpTest_scaled = scaler.fit_transform(gexpTest.loc[topFeatures].T)
+gexpValidation_scaled = scaler.fit_transform(gexpValidation.loc[topFeatures].T)
+"""
+gexpFull = np.concatenate((gexpTrain, gexpValidation),axis=0)
+gexpFull = pd.DataFrame(gexpFull)
+scaler = StandardScaler()
+gexpFull_scaled = scaler.fit_transform(gexpFull.loc[topFeatures].T)
 gexpTest_scaled  = scaler.transform(gexpTest.loc[topFeatures].T)
-gexpValidation_scaled = scaler.transform(gexpValidation.loc[topFeatures].T)
+"""
 
+convertMe = {'TB':'TB','Active Sarcoid':0,'Non-active sarcoidosis':0,'Control':0}
+y_train = pd.Series([1 if i=='TB' else 0 for i in [convertMe[i] for i in phenosTrain['disease_state']]])
+y_test = pd.Series([1 if i=='TB' else 0 for i in [convertMe[i] for i in phenosTest['disease_state']]])
+y_validation = pd.Series([1 if i=='TB' else 0 for i in [convertMe[i] for i in phenosValidation['disease_state']]])
+#y_train = ([convertMe[i] for i in phenosTrain['disease_state']])
+#y_test = ([convertMe[i] for i in phenosTest['disease_state']])
+#y_validation = ([convertMe[i] for i in phenosValidation['disease_state']])
 
-convertMe = {'TB':0,'Active Sarcoid':1,'Non-active sarcoidosis':1,'Control':1}
-y_train = ([convertMe[i] for i in phenosTrain['disease_state']])
-y_test = ([convertMe[i] for i in phenosTest['disease_state']])
-y_validation = ([convertMe[i] for i in phenosValidation['disease_state']])
-
-gexpFull_scaled = np.concatenate((gexpTrain_scaled, gexpValidation_scaled),axis=0)
+gexpFull_scaled = np.concatenate((gexpTrain_scaled,gexpValidation_scaled),axis=0)
 y_full = np.concatenate((y_train,y_validation),axis=0)
 #%%
 #7 Build model
 model = models.Sequential([layers.Input(shape=(gexpFull_scaled.shape[1],)),
                            layers.Dense(600, activation='relu'),
-                           layers.Dropout(0.2),
+                           layers.Dropout(0.3),
                            layers.Dense(200, activation='relu'),
-                           layers.Dropout(0.4),
+                           layers.Dropout(0.2),
                            # Binary classification = sigmoid, multiple class classification = softmax
                            layers.Dense(1, activation='sigmoid')
                            ])
 
 model.summary()
 
-#early_stop = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=15, restore_best_weights=True)
-#lr_scheduler = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=8, min_lr=0.00001)
+
 #class_weights = {0:(len(y_full)/(2*(len(y_full)-sum(y_full)))),1:(len(y_full)/(2*sum(y_full)))}
 ## 8. Compile
 model.compile(
@@ -173,13 +185,13 @@ model.compile(
 history = model.fit(
     gexpFull_scaled, y_full,
     validation_split=0.15,
-    epochs=100,
-    batch_size=16,
+    epochs=3500,
+    batch_size=32,
     verbose=2,
-    #callbacks = [early_stop,lr_scheduler],
+    #callbacks = [learning_rate],
     #class_weight = class_weights
 )
-print(f"Minimum Validation Loss: {min(history.history['val_loss'])}")
+
 
 
 
@@ -271,6 +283,7 @@ Best Model with Quantile Transformer: min val loss = 0.3663
 ## 8 Evaluation metrics tbd
 with PdfPages('training_curves_multiclass_3.pdf') as pdf:
     fig, ax = plt.subplots(1,2, figsize=(12,4))
+    fig.suptitle("Final Binary Classifer")
     ax[0].plot(history.history['loss'], label='train_loss')
     ax[0].plot(history.history['val_loss'], label='val_loss')
     ax[0].set_xlabel('Epoch')
@@ -285,7 +298,7 @@ with PdfPages('training_curves_multiclass_3.pdf') as pdf:
         ax[1].legend()
     pdf.savefig()
     plt.close()
-    
+
 """
 Fix overfitting: too many layers or neurons, ***trying to predict too many classes****,
 increase drop out, ***add validation data to training ****
