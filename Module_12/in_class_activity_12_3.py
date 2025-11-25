@@ -118,7 +118,7 @@ phenosValidation = phenosValidation.loc[subset_validation]
 gexpTrain = gseTrain.pivot_samples('VALUE').loc[:,subset_train]
 gexpTest = gseTest.pivot_samples('VALUE').loc[:,subset_test]
 gexpValidation = gseValidation.pivot_samples('VALUE').loc[:,subset_validation]
-
+"""
 qt = QuantileTransformer()
 gexpTrainBuffer = qt.fit_transform(gexpTrain.T)
 gexpTestBuffer = qt.transform(gexpTest.T)
@@ -126,7 +126,7 @@ gexpValidationBuffer = qt.transform(gexpValidation.T)
 gexpTrain = pd.DataFrame(gexpTrainBuffer.T, columns=gexpTrain.columns, index=gexpTrain.index)
 gexpTest = pd.DataFrame(gexpTestBuffer.T, columns=gexpTest.columns, index=gexpTest.index)
 gexpValidation = pd.DataFrame(gexpValidationBuffer.T, columns=gexpValidation.columns, index=gexpValidation.index)
-
+"""
 #5 Feature Selection
 
 topFeatures = gexpTrain.var(axis=1).sort_values(ascending=False).index[range(1000)]
