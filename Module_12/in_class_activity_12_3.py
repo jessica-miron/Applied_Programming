@@ -185,7 +185,7 @@ model.compile(
 history = model.fit(
     gexpTrain_scaled, y_train,
     validation_split=0.15,
-    epochs=5000,
+    epochs=3500,
     batch_size=32,
     verbose=2,
     #callbacks = [learning_rate],
@@ -281,21 +281,114 @@ Best Model with Quantile Transformer: min val loss = 0.3663
 """
 
 ## 8 Evaluation metrics tbd
-with PdfPages('training_curves_multiclass_3.pdf') as pdf:
-    fig, ax = plt.subplots(1,2, figsize=(12,4))
-    fig.suptitle("Final Binary Classifer")
+with PdfPages('Learning rate optimization.pdf') as pdf:
+    fig, ax = plt.subplots(1,3, figsize=(12,4))
+    fig.suptitle("Learning Rate Optimization")
+    model = models.Sequential([layers.Input(shape=(gexpTrain_scaled.shape[1],)),
+                               layers.Dense(600, activation='relu'),
+                               layers.Dropout(0.3),
+                               layers.Dense(200, activation='relu'),
+                               layers.Dropout(0.2),
+                               # Binary classification = sigmoid, multiple class classification = softmax
+                               layers.Dense(1, activation='sigmoid')
+                               ])
+
+    model.compile(
+        optimizer=optimizers.SGD(learning_rate=0.01),
+        loss='binary_crossentropy',
+        metrics=['accuracy']
+    )
+
+
+    ## 9. Training the model
+    history = model.fit(
+        gexpTrain_scaled, y_train,
+        validation_split=0.15,
+        epochs=100,
+        batch_size=32,
+        verbose=2,
+        #callbacks = [learning_rate],
+        #class_weight = class_weights
+    )
     ax[0].plot(history.history['loss'], label='train_loss')
     ax[0].plot(history.history['val_loss'], label='val_loss')
     ax[0].set_xlabel('Epoch')
     ax[0].set_ylabel('Loss')
+    ax[0].set_title('Learning Rate: 0.01')
     ax[0].legend()
+    
+    model = models.Sequential([layers.Input(shape=(gexpTrain_scaled.shape[1],)),
+                               layers.Dense(600, activation='relu'),
+                               layers.Dropout(0.3),
+                               layers.Dense(200, activation='relu'),
+                               layers.Dropout(0.2),
+                               # Binary classification = sigmoid, multiple class classification = softmax
+                               layers.Dense(1, activation='sigmoid')
+                               ])
+
+    model.compile(
+        optimizer=optimizers.SGD(learning_rate=0.001),
+        loss='binary_crossentropy',
+        metrics=['accuracy']
+    )
+
+
+    ## 9. Training the model
+    history = model.fit(
+        gexpTrain_scaled, y_train,
+        validation_split=0.15,
+        epochs=100,
+        batch_size=32,
+        verbose=2,
+        #callbacks = [learning_rate],
+        #class_weight = class_weights
+    )
+    ax[1].plot(history.history['loss'], label='train_loss')
+    ax[1].plot(history.history['val_loss'], label='val_loss')
+    ax[1].set_xlabel('Epoch')
+    ax[1].set_ylabel('Loss')
+    ax[1].set_title('Learning Rate: 0.001')
+    ax[1].legend()
+    
+    model = models.Sequential([layers.Input(shape=(gexpTrain_scaled.shape[1],)),
+                               layers.Dense(600, activation='relu'),
+                               layers.Dropout(0.3),
+                               layers.Dense(200, activation='relu'),
+                               layers.Dropout(0.2),
+                               # Binary classification = sigmoid, multiple class classification = softmax
+                               layers.Dense(1, activation='sigmoid')
+                               ])
+
+    model.compile(
+        optimizer=optimizers.SGD(learning_rate=0.0001),
+        loss='binary_crossentropy',
+        metrics=['accuracy']
+    )
+
+
+    ## 9. Training the model
+    history = model.fit(
+        gexpTrain_scaled, y_train,
+        validation_split=0.15,
+        epochs=100,
+        batch_size=32,
+        verbose=2,
+        #callbacks = [learning_rate],
+        #class_weight = class_weights
+    )
+    ax[2].plot(history.history['loss'], label='train_loss')
+    ax[2].plot(history.history['val_loss'], label='val_loss')
+    ax[2].set_xlabel('Epoch')
+    ax[2].set_ylabel('Loss')
+    ax[2].set_title('Learning Rate: 0.0001')
+    ax[2].legend()
         
-    if 'accuracy' in history.history:
-        ax[1].plot(history.history['accuracy'], label='train_acc')
-        ax[1].plot(history.history['val_accuracy'], label='val_acc')
-        ax[1].set_xlabel('Epoch')
-        ax[1].set_ylabel('Accuracy')    
-        ax[1].legend()
+    #if 'accuracy' in history.history:
+        #ax[1].plot(history.history['accuracy'], label='train_acc')
+        #ax[1].plot(history.history['val_accuracy'], label='val_acc')
+        #ax[1].set_xlabel('Epoch')
+        #ax[1].set_ylabel('Accuracy')    
+        #ax[1].legend()
     pdf.savefig()
     plt.close()
 
