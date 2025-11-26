@@ -156,11 +156,11 @@ y_validation = pd.Series([1 if i=='TB' else 0 for i in [convertMe[i] for i in ph
 #y_test = ([convertMe[i] for i in phenosTest['disease_state']])
 #y_validation = ([convertMe[i] for i in phenosValidation['disease_state']])
 
-gexpFull_scaled = np.concatenate((gexpTrain_scaled,gexpValidation_scaled),axis=0)
-y_full = np.concatenate((y_train,y_validation),axis=0)
+#gexpFull_scaled = np.concatenate((gexpTrain_scaled,gexpValidation_scaled),axis=0)
+#y_full = np.concatenate((y_train,y_validation),axis=0)
 #%%
 #7 Build model
-model = models.Sequential([layers.Input(shape=(gexpFull_scaled.shape[1],)),
+model = models.Sequential([layers.Input(shape=(gexpTrain_scaled.shape[1],)),
                            layers.Dense(600, activation='relu'),
                            layers.Dropout(0.3),
                            layers.Dense(200, activation='relu'),
@@ -183,9 +183,9 @@ model.compile(
 
 ## 9. Training the model
 history = model.fit(
-    gexpFull_scaled, y_full,
+    gexpTrain_scaled, y_train,
     validation_split=0.15,
-    epochs=3500,
+    epochs=5000,
     batch_size=32,
     verbose=2,
     #callbacks = [learning_rate],
